@@ -1,0 +1,71 @@
+/* Import Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p, ul {
+    text-align: justify;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.experience-item, .leadership-item {
+    margin-bottom: 20px;
+}
+
+.details {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Centered Bullet Points */
+.achievements-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement-item {
+    display: block;
+    text-align: left;
+    margin: 0 auto 10px auto;
+    position: relative;
+    padding-left: 20px; /* Space for custom bullet */
+}
+
+.achievement-item::before {
+    content: "•"; /* Custom bullet point */
+    position: absolute;
+    left: 0;
+    color: white; /* Match the background color to blend in */
+}
+
+/*Footer*/
+p1 {
+    text-align: centered;
+}

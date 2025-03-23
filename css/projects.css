@@ -1,0 +1,74 @@
+/* Import Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Apply Inter Font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Projects Section - Revised Layout */
+#projects {
+    margin-bottom: 50px;
+    width: 100%; /* Full width containment */
+}
+
+#projects h1 {
+    text-align: center;
+    margin-top: 20px; /* Adjust this value to position the title higher */
+    margin-bottom: 30px; /* Adjust this value to add space below the title */
+    font-size: 2.5rem; /* Adjust the font size as needed */
+}
+
+#projects h2 {
+    margin-top: 40px; /* Add space above each section title */
+    font-size: 2rem; /* Adjust the font size as needed */
+    border-bottom: 2px solid #ddd; /* Add a bottom border for separation */
+    padding-bottom: 10px; /* Add padding below the title */
+}
+
+.project {
+    margin-bottom: 30px; /* Add space between projects */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for project cards */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Move the project card up on hover */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.project h3 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add space below the project title */
+}
+
+.project p {
+    margin-bottom: 10px; /* Add space below the project description */
+}
+
+.project a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.project a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #projects h1 {
+        font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+
+    #projects h2 {
+        font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    }
+
+    .project h3 {
+        font-size: 1.25rem; /* Adjust the font size for smaller screens */
+    }
+}

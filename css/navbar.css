@@ -1,0 +1,70 @@
+/* Navbar Styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    background-color: white !important;
+    color: black !important;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: none !important; /* Removed the visible delimiter */
+    box-shadow: none !important; /* Ensures it blends with background */
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link {
+    color: black !important;
+    text-decoration: none;
+    padding: 10px 30px; /* Adjusted padding for more space between options */
+    font-weight: bold;
+    font-size: 18px; /* Increased font size */
+    transition: transform 0.3s ease-in-out; /* Removed color transition */
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+}
+
+/* Smooth Hover Effects */
+.nav-link:hover, .btn:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.08);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Animation on Scroll */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    background-color: white;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-item {
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Jose Alfonzo</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch("../templates/navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar-container").innerHTML = data);
+    </script>
+    
+    <section id="about" class="container my-5">
+        <h1>About Me</h1>
+        <p>
+            As a Venezuelan native with a strong background in competitive swimming, I have developed a robust foundation in discipline, teamwork, and achieving objectives. My academic journey began at the age of 16, and I am set to graduate at 21 with dual majors in <strong>Artificial Intelligence and Computer Science</strong> from Long Island University. This accelerated path reflects my dedication and passion for learning.
+        </p>
+        <p>
+            I chose <strong>Artificial Intelligence</strong> because it uniquely combines my interests in <strong>mathematics, physics, and computation</strong>, offering a cutting-edge field that represents the next step in technological innovation. Throughout my academic career, I have maintained a cumulative <strong>GPA of 3.7</strong>, demonstrating my commitment to academic excellence. Additionally, I am a proud member of the <strong>Honors College at Long Island University</strong>, which has provided me with a challenging and enriching academic environment.
+        </p>
+    </section>
+    
+    <section id="work-experience" class="container my-5">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-item">
+            <h3>AI Engineer Intern – PM Accelerator</h3>
+            <p class="details">August 2024 - Present | Remote</p>
+            <ul>
+                <li>Developed and enhanced the front-end of the company’s chatbot, focusing on user interface design and user experience.</li>
+                <li>Collaborated with product managers, designers, and data scientists to integrate AI-driven features seamlessly into the user interface.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Information Technology Intern – Stifel Financial</h3>
+            <p class="details">May 2023 - December 2023 | Manhattan, New York</p>
+            <ul>
+                <li>Developed and maintained Python applications, integrating SQL databases and APIs to streamline data management and access.</li>
+                <li>Supported data science initiatives by analyzing data and enhancing decision-making processes, while ensuring seamless front-end and back-end integration.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>NYCHA Swim Corps Cohort Leader – Rising Tide Effect</h3>
+            <p class="details">June 2024 - August 2024 | New York, New York</p>
+            <ul>
+                <li>Developed curriculum for computer science and AI, enhancing educational growth and program goals.</li>
+                <li>Led youth activities and supervised participants, ensuring safety and engagement in water-related programs.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="leadership" class="container my-5">
+        <h2 class="section-title">Leadership</h2>
+    
+        <!-- AI Club Leadership -->
+        <div class="leadership-item">
+            <h3>Co-Founder and Vice President of AI Club – LIU Brooklyn</h3>
+            <p class="details">November 2023 – Present</p>
+            <p>In this dynamic environment, members refine skills, innovate, publish, and aim for excellence in AI. Our goal is to drive innovation, foster collaboration, and tackle high-impact projects.</p>
+        </div>
+    
+        <!-- LIU Children's Academy -->
+        <div class="leadership-item">
+            <h3>Head Instructor of the LIU Children’s Academy</h3>
+            <ul>
+                <li>Led swim instruction programs catering to a diverse age range, from infants to adults, ensuring high-quality teaching and safety standards.</li>
+                <li>Managed administrative tasks including tracking attendance and scheduling instructors to optimize class efficiency.</li>
+                <li>Developed and maintained a website for the program, enhancing accessibility and information dissemination for participants and parents.</li>
+            </ul>
+        </div>
+    
+        <!-- LIU Aquatics Facility -->
+        <div class="leadership-item">
+            <h3>Head Lifeguard of the LIU Aquatics Facility</h3>
+            <ul>
+                <li>Oversaw daily operations of the pool, ensuring safety regulations were strictly followed and the facility remained in optimal condition.</li>
+                <li>Managed administrative functions such as planning staff rotations, organizing team meetings, and coordinating schedules for lifeguards, maintenance personnel, and swim coaches.</li>
+                <li>Implemented proactive maintenance strategies to ensure the pool met health and safety standards, contributing to a well-organized aquatic environment.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="academic-achievements" class="container my-5">
+        <h2 class="section-title">Academic Achievements</h2>
+        <ul class="achievements-list">
+            <li class="achievement-item">Member of The National Society of Leadership and Success (NSLS) (2023 - Present)</li>
+            <li class="achievement-item">Member of The Student-Athlete Advisory Committee (SAAC) (2023 - 2024)</li>
+            <li class="achievement-item">Member of the Honors College of Long Island University (2022 - Present)</li>
+        </ul>
+    </section>
+    
+    <footer class="bg-dark text-white text-center p-3">
+        <p1>&copy; 2025 Jose Alfonzo. All rights reserved.</p1>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

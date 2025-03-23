@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Jose Alfonzo</title>
+    <link rel="stylesheet" href="../css/projects.css"> <!-- Include the new CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch("../templates/navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar-container").innerHTML = data);
+    </script>
+    
+    <section id="projects" class="container">
+        <h1>Projects</h1>
+        
+        <h2 id="artificial-intelligence-projects">Artificial Intelligence Projects</h2>
+        <div class="project">
+            <h3>Development of a CNN Model for Word-Level ASL Recognition</h3>
+            <p>Built a real-time American Sign Language recognition system using CNNs on the WLASL dataset.</p>
+        </div>
+        <div class="project">
+            <h3>Cat vs. Dog Image Classification Using Neural Networks</h3>
+            <p>Developed a CNN-based image classifier for distinguishing between cats and dogs.</p>
+            <a href="https://github.com/Jrolando15/Cat-vs-Dog-Image-Classification-Using-Neural-Network" target="_blank">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h3>Traffic Road Object Detection</h3>
+            <p>Implemented a machine learning model for detecting traffic objects using YOLO and OpenCV.</p>
+            <a href="https://github.com/Jrolando15/Traffic-Road-Object-detection-" target="_blank">GitHub Repository</a>
+        </div>
+        
+        <h2 id="software-engineering-projects">Software Engineering Projects</h2>
+        <div class="project">
+            <h3>Weather App (Improved Version)</h3>
+            <p>Enhanced a weather forecasting web app with OpenWeather API integration.</p>
+            <a href="https://github.com/Jrolando15/weather-app-improve" target="_blank">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h3>Children's Academy Swim Website</h3>
+            <p>Developed a website for managing LIU Children’s Academy Swim programs.</p>
+            <a href="https://github.com/Jrolando15/childrens-academy-swim" target="_blank">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h3>To-Do List Application</h3>
+            <p>Designed a web-based task manager for improved productivity.</p>
+            <a href="https://github.com/Jrolando15/todo-list" target="_blank">GitHub Repository</a>
+        </div>
+        
+        <h2 id="data-science-projects">Data Science Projects</h2>
+        <div class="project">
+            <h3>Customer Churn Prediction (R Version)</h3>
+            <p>Created a predictive model to identify customers likely to churn.</p>
+            <a href="https://github.com/Jrolando15/R-Customer-Churn-Prediction" target="_blank">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h3>Financial Data Analysis and Sentiment Analysis Tool</h3>
+            <p>Built a financial tool that combines market trends and sentiment analysis from news and social media.</p>
+            <a href="https://github.com/Jrolando15/Financial-Data-Analysis-and-Sentiment-Analysis-Tool" target="_blank">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h3>Fraud Detection System</h3>
+            <p>Developed a machine learning-based fraud detection system.</p>
+            <a href="https://github.com/Jrolando15/Fraud-detection-System" target="_blank">GitHub Repository</a>
+        </div>
+        
+        <h2 id="projects-in-progress">Projects in Progress</h2>
+        <div class="project">
+            <h3>Gene Expression Analysis for Pancreas Cancer Classification</h3>
+            <p>Developed a machine learning pipeline using feature selection and comparative analysis of SVM, Random Forest, and neural networks on public datasets like TCGA Pan-cancer to improve classification accuracy over manual methods.</p>
+            <p><strong>GitHub Repository (Coming Soon)</strong></p>
+        </div>
+        <div class="project">
+            <h3>GAN-Based Data Augmentation & Anomaly Detection</h3>
+            <p>Goal:</p>
+            <ul>
+                <li>Train StyleGAN2-ADA on LIDC-IDRI lung nodule CT scans.</li>
+                <li>Use GAN-generated images to improve lung nodule classification accuracy.</li>
+                <li>Expand to Anomaly Detection: Detect nodules using GAN-based Outlier Detection (e.g., AnoGAN, f-AnoGAN).</li>
+            </ul>
+            <p><strong>GitHub Repository (Coming Soon)</strong></p>
+        </div>
+        <p>If you want to check out my full portfolio of work, visit my GitHub: 
+            <a href="https://github.com/Jrolando15" target="_blank">GitHub Profile</a></p>
+    </section>
+    
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2025 Jose Alfonzo. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

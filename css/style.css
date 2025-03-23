@@ -1,0 +1,337 @@
+/* Import Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Adjust the main content to be more centered vertically */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    padding-top: 50px; /* Adjust this value to move the content lower */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #181818;
+    color: #e0e0e0;
+}
+
+/* ============================================
+   COLOR SCHEME & TYPOGRAPHY
+============================================ */
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --accent-color: #777;
+    --hover-color: #444;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ============================================
+   LAYOUT & RESPONSIVENESS
+============================================ */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .project {
+        padding: 10px;
+    }
+}
+
+/* ============================================
+   INTERACTIVE ELEMENTS & HOVER EFFECTS
+============================================ */
+/* Ensure .nav-link and .btn exist in your HTML for these hover effects to work */
+.nav-link:hover, 
+.btn:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.08);
+    color: inherit !important; /* Keep the same font color */
+    background-color: inherit !important; /* Keep the same background color */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styling */
+.btn-outline-dark {
+    color: #000;
+    border-color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    transform: scale(1.08);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Hover Effect */
+.project {
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   ANIMATIONS & LOADING EFFECTS
+============================================ */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 5px solid var(--secondary-color);
+    border-top: 5px solid var(--accent-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ============================================
+   MODAL STYLING
+============================================ */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#profile-photo {
+    max-width: 80%; /* Adjust this value to make the image smaller */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    margin-top: -20px; /* Adjust this value to move the image higher */
+}
+
+#hero .row {
+    align-items: flex-start; /* Align items to the start to bring them higher */
+}
+
+#hero .col-md-8 {
+    margin-top: -20px; /* Adjust this value to move the text higher */
+}
+
+#about {
+    text-align: center; /* Centers text horizontally */
+}
+
+#about p {
+    text-align: justify; /* Justifies paragraph text */
+    margin-bottom: 20px; /* Adds spacing between paragraphs */
+}
+
+/* Optional: Vertical Centering (if needed) */
+/* About Me Section Styling */
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    min-height: 100vh; /* Sets height to fill the viewport */
+    padding: 20px; /* Adds padding around the content */
+    text-align: center; /* Centers text horizontally */
+}
+
+#about p {
+    text-align: justify; /* Justifies paragraph text for better readability */
+    margin-bottom: 20px; /* Adds spacing between paragraphs */
+}
+
+/* Section Title Styling (for subsections like Work Experience, Academic Achievements, Leadership) */
+#about .section-title {
+    font-size: 28px; /* Slightly larger font for titles */
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333; /* Neutral color for professional look */
+}
+
+/* Work Experience & Leadership Styling */
+#about .experience-item,
+#about .leadership-item {
+    margin-bottom: 30px; /* Adds spacing between items */
+}
+
+#about .details {
+    font-style: italic;
+    color: #555; /* Subtle color for date/location details */
+}
+
+#about ul {
+    margin-left: 20px; /* Indents list items slightly */
+    text-align: left; /* Aligns list items to the left for better readability */
+}
+
+/* Academic Achievements Styling */
+#about .achievements-list {
+    list-style-type: disc; /* Uses bullets for achievements */
+    padding-left: 40px; /* Adds space between bullets and text */
+    text-align: left; /* Aligns list items to the left for consistency with other sections */
+}
+
+/* Optional Styling for Cards (if you want to use card-style design) */
+#about .experience-item,
+#about .leadership-item {
+    background-color: #f9f9f9; /* Light background for cards */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+}
+
+/* Skills Section - Revised Grid Layout */
+#skills {
+    margin-bottom: 10px;
+    width: 100%; /* Full width containment */
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 0.05px; /* Adjust this value to position the title higher */
+    margin-bottom: 20px; /* Adjust this value to add space below the title */
+    font-size: 2.5rem; /* Adjust the font size as needed */
+}
+
+.skills-grid {
+    display: grid;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+/* Top Row - 3 Equal Columns */
+.skills-grid.top-row {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Bottom Row - 2 Equal Columns */
+.skills-grid.bottom-row {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .skills-grid.top-row {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .skills-grid.top-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skills-grid.bottom-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-card {
+        min-height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
