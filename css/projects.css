@@ -4,6 +4,11 @@
 /* Apply Inter Font */
 body {
     font-family: 'Inter', sans-serif;
+    background-image: url('../images/overhead-view-coffee-cup-keyboard-camera-paper-white-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* Projects Section - Revised Layout */

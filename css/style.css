@@ -5,6 +5,11 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
+    background-image: url('../images/overhead-view-coffee-cup-keyboard-camera-paper-white-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* Adjust the main content to be more centered vertically */

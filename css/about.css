@@ -5,6 +5,11 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
+    background-image: url('../images/overhead-view-coffee-cup-keyboard-camera-paper-white-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .container {
@@ -31,8 +36,18 @@ ul {
     padding-left: 20px;
 }
 
-.experience-item, .leadership-item {
+.experience-item, .leadership-item, .achievement-item {
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience-item:hover, .leadership-item:hover, .achievement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .details {
@@ -50,22 +65,3 @@ ul {
     align-items: center;
 }
 
-.achievement-item {
-    display: block;
-    text-align: left;
-    margin: 0 auto 10px auto;
-    position: relative;
-    padding-left: 20px; /* Space for custom bullet */
-}
-
-.achievement-item::before {
-    content: "•"; /* Custom bullet point */
-    position: absolute;
-    left: 0;
-    color: white; /* Match the background color to blend in */
-}
-
-/*Footer*/
-p1 {
-    text-align: centered;
-}
